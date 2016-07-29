@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.github.fasar.FXMLController">
+   <children>
+      <HBox>
+         <children>
+            <Pane HBox.hgrow="ALWAYS" />
+            <Button fx:id="menuBtn" mnemonicParsing="false" onAction="#handleButtonMenu" text="Menu">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox fx:id="hbox" VBox.vgrow="ALWAYS">
+         <children>
+            <AnchorPane HBox.hgrow="ALWAYS">
+               <children>
+                  <Pane fx:id="screenPane" layoutX="100.0" layoutY="54.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" HBox.hgrow="ALWAYS">
+                     <padding>
+                        <Insets right="100.0" top="100.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+                  <Button layoutX="380.0" layoutY="2.0" mnemonicParsing="false" onAction="#onTest" text="Button" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <Accordion fx:id="menuPane" maxWidth="200.0" minWidth="-Infinity" prefWidth="200.0" HBox.hgrow="NEVER">
+              <panes>
+                <TitledPane animated="false" text="untitled 1">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" />
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" text="untitled 2">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" />
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" text="untitled 3">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" />
+                  </content>
+                </TitledPane>
+              </panes>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Accordion>
+         </children>
+      </HBox>
+   </children>
+</VBox>
